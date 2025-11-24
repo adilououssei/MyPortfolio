@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -27,14 +27,16 @@ const Navbar: React.FC = () => {
 
   return (
     <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-darker/90 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'
+      className={`fixed w-full z-50 transition-all duration-300 border-b border-transparent ${
+        scrolled 
+          ? 'bg-darker/90 backdrop-blur-xl shadow-lg border-slate-800 py-3' 
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2 text-primary font-bold text-xl">
+            <a href="#" className="flex items-center gap-2 text-primary font-bold text-xl hover:text-sky-400 transition-colors">
               <Code2 className="w-8 h-8" />
               <span>DevPortfolio</span>
             </a>
@@ -46,14 +48,15 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-300 hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider"
+                className="text-slate-300 hover:text-primary transition-colors text-sm font-medium uppercase tracking-wider relative group"
               >
                 {link.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
               </a>
             ))}
             <a 
               href="#contact"
-              className="bg-primary hover:bg-sky-600 text-white px-5 py-2 rounded-full font-medium transition-colors"
+              className="bg-primary hover:bg-sky-600 text-white px-5 py-2 rounded-full font-medium transition-all shadow-lg hover:shadow-primary/25 transform hover:-translate-y-0.5"
             >
               Me recruter
             </a>
@@ -63,7 +66,7 @@ const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-300 hover:text-white focus:outline-none p-2"
+              className="text-slate-300 hover:text-white focus:outline-none p-2 rounded-lg hover:bg-slate-800 transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -74,26 +77,28 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu with Smooth Transition */}
       <div 
-        className={`md:hidden absolute w-full bg-surface/95 backdrop-blur-md border-t border-slate-700 shadow-xl overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+        className={`md:hidden absolute top-full left-0 w-full bg-surface/95 backdrop-blur-xl border-b border-slate-700/50 shadow-2xl overflow-hidden transition-all duration-300 ease-in-out origin-top ${
+          isOpen 
+            ? 'opacity-100 translate-y-0 visible' 
+            : 'opacity-0 -translate-y-4 invisible pointer-events-none'
         }`}
       >
-        <div className="px-4 py-6 space-y-3">
+        <div className="px-4 py-6 space-y-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700/50 hover:pl-5 transition-all duration-200"
+              className="block px-4 py-3 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200"
               onClick={handleLinkClick}
             >
               {link.name}
             </a>
           ))}
-          <div className="pt-4 mt-4 border-t border-slate-700/50">
+          <div className="pt-4 mt-2 border-t border-slate-700/50">
             <a 
               href="#contact"
               onClick={handleLinkClick}
-              className="block w-full text-center bg-primary hover:bg-sky-600 text-white px-5 py-3 rounded-lg font-medium transition-colors"
+              className="block w-full text-center bg-primary hover:bg-sky-600 text-white px-5 py-3 rounded-lg font-medium transition-colors shadow-lg"
             >
               Me recruter
             </a>
