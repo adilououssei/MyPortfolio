@@ -18,7 +18,8 @@ const Hero: React.FC = () => {
               {PROFILE.availability}
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight mb-4">
-              Salut, je suis <span className="text-primary">{PROFILE.name}</span>
+              Salut, je suis <span className="text-primary">OUSSEI Adilou
+              </span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-slate-400 mb-6">
               {PROFILE.role}
@@ -29,14 +30,15 @@ const Hero: React.FC = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-sky-600 transition-all shadow-lg hover:shadow-primary/25"
             >
               Voir mes projets <ArrowRight className="ml-2 w-5 h-5" />
             </a>
-            <a 
-              href="#" 
+            <a
+              href="Mon_CV.pdf"
+              target="_blank"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-base font-medium rounded-lg text-slate-300 bg-transparent hover:bg-slate-800 transition-all"
             >
               Télécharger CV <Download className="ml-2 w-5 h-5" />
@@ -47,9 +49,9 @@ const Hero: React.FC = () => {
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="relative w-72 h-72 md:w-96 md:h-96">
             <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-2xl opacity-60 animate-pulse"></div>
-            <img 
-              src="https://picsum.photos/500/500?grayscale" 
-              alt="Profile" 
+            <img
+              src="Moi.jpg"
+              alt="Profile"
               className="relative w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-2xl"
             />
           </div>
