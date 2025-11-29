@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
               Je suis actuellement disponible pour de nouveaux projets. Que vous ayez une question ou juste envie de dire bonjour, je ferai de mon mieux pour vous répondre !
             </p>
             <a 
-              href={`mailto:contact@example.com`}
+              href={`mailto:adilououssei@gmail.com`}
               className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-darker bg-white hover:bg-slate-200 rounded-lg transition-colors"
             >
               Me contacter
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
           <p>© {new Date().getFullYear()} {PROFILE.name}. Tous droits réservés.</p>
           <p className="mt-2 md:mt-0">
-            Conçu avec React, Tailwind & Gemini AI
+            Conçu avec React, Tailwind
           </p>
         </div>
       </div>

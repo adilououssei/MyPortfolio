@@ -1,26 +1,26 @@
 import { Project, Experience, SkillCategory, SocialLink } from './types';
 
 export const PROFILE = {
-  name: "Alexandre Dupont",
-  role: "Développeur Full Stack Senior",
+  name: "OUSSEI Adilou",
+  role: "Développeur Full Stack",
   headline: "Je conçois des expériences numériques robustes et esthétiques.",
-  about: "Passionné par le développement web depuis plus de 5 ans, je maîtrise l'ensemble de la stack technique, du serveur à l'interface utilisateur. Mon objectif est de créer des solutions performantes, évolutives et centrées sur l'utilisateur. J'aime résoudre des problèmes complexes avec du code propre et bien architecturé.",
-  location: "Paris, France",
+  about: "Développeur full-stack en formation avancée, je conçois et réalise des applications web complètes en maîtrisant aussi bien l’architecture back-end que l’intégration front-end. Grâce à ma formation modulaire orientée pratique, j’ai acquis de solides compétences en programmation et en conception d’interfaces modernes. Passionné par le développement, j’améliore continuellement mes outils et mes méthodes afin de livrer des solutions fiables, performantes et adaptées aux besoins réels des utilisateurs.",
+  location: "Lomé, Togo",
   availability: "Disponible pour freelance"
 };
 
 export const SKILLS: SkillCategory[] = [
   {
     name: "Frontend",
-    skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Redux", "Three.js"]
+    skills: ["HTML5", "CSS3", "TypeScript", "React", "React Native", "Bootstrap"]
   },
   {
     name: "Backend",
-    skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "Redis"]
+    skills: ["PHP", "Symfony", "Python", "Django", "MySQL"]
   },
   {
     name: "DevOps & Tools",
-    skills: ["Docker", "AWS", "Git", "CI/CD", "Jest", "Figma"]
+    skills: ["Docker","Git","Figma"]
   }
 ];
 
@@ -80,8 +80,8 @@ export const PROJECTS: Project[] = [
 
 export const SOCIALS: SocialLink[] = [
   { name: "GitHub", url: "https://github.com", icon: "github" },
-  { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
-  { name: "Email", url: "mailto:alex@example.com", icon: "mail" }
+  { name: "LinkedIn", url: "www.linkedin.com/in/adilou-oussei", icon: "linkedin" },
+  { name: "Email", url: "mailto:adilououssei@gmail.com", icon: "mail" }
 ];
 
 // System prompt for the Gemini AI assistant

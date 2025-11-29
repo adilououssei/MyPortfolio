@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Accueil', href: '#home' },
+    { name: 'Accueil', href: 'home' },
     { name: 'Compétences', href: '#skills' },
     { name: 'Projets', href: '#projects' },
     { name: 'Expérience', href: '#experience' },
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2 text-primary font-bold text-xl hover:text-sky-400 transition-colors">
+            <a href="home" className="flex items-center gap-2 text-primary font-bold text-xl hover:text-sky-400 transition-colors">
               <Code2 className="w-8 h-8" />
               <span>DevPortfolio</span>
             </a>

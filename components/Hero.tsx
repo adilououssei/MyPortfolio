@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
           <div className="relative w-72 h-72 md:w-96 md:h-96">
             <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full blur-2xl opacity-60 animate-pulse"></div>
             <img
-              src="Moi.jpg"
+              src="image2.jpg"
               alt="Profile"
               className="relative w-full h-full object-cover rounded-full border-4 border-slate-800 shadow-2xl"
             />
