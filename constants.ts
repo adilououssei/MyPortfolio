@@ -16,11 +16,11 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "Backend",
-    skills: ["PHP", "Symfony", "Python", "Django", "MySQL"]
+    skills: ["PHP", "Symfony", "Python", "Django"]
   },
   {
     name: "DevOps & Tools",
-    skills: ["Git","Figma", "WordPress" ]
+    skills: ["Git","Figma", "WordPress", "Docker" ]
   }
 ];
 

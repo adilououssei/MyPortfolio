@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
               Voir mes projets <ArrowRight className="ml-2 w-5 h-5" />
             </a>
             <a
-              href="Mon_CV.pdf"
+              href="pdf/Mon_CV.pdf"
               target="_blank"
               className="inline-flex items-center justify-center px-6 py-3 border border-slate-600 text-base font-medium rounded-lg text-slate-300 bg-transparent hover:bg-slate-800 transition-all"
             >
