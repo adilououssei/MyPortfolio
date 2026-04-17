@@ -20,7 +20,7 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "DevOps & Tools",
-    skills: ["Docker","Git","Figma"]
+    skills: ["Git","Figma", "WordPress" ]
   }
 ];
 
