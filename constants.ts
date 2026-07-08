@@ -20,51 +20,58 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     name: "DevOps & Tools",
-    skills: ["Git","Figma", "WordPress", "Docker" ]
+    skills: ["Git / GitHub GitLab","Figma", "WordPress", "Docker" ]
   }
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    role: "Lead Développeur Full Stack",
-    company: "TechSolutions Inc.",
-    period: "2022 - Présent",
-    description: "Direction d'une équipe de 5 développeurs. Conception de l'architecture micro-services et migration du legacy code vers React/Node.js. Amélioration des performances de 40%."
+    role: "Développeur Full Stack",
+    company: "MyHospital",
+    period: "Mai 2024 - Mai 2025",
+    description: "Conception et réalisation d'une application Web et Mobile pour MyHospital. Une application de gestion d'urgence médicale. Plusieurs fonctionnalités ont été implémentés comme la gestion des pharmacies de garde, la gestion des hôpitaux, les prises de rendez-vous, des consultations en lien, la téléexpertise entre docteur et autre."
   },
   {
     id: 2,
-    role: "Développeur React Senior",
-    company: "Creative Web Agency",
-    period: "2020 - 2022",
-    description: "Développement d'interfaces complexes pour des clients e-commerce. Implémentation de Design Systems et intégration d'API tierces (Stripe, Mapbox)."
+    role: "Développeur Full Stack",
+    company: "Frensh Cercle",
+    period: "2025 - 2026",
+    description: "Développement d'une application web pour la gestion des cours de français en ligne"
   },
   {
     id: 3,
-    role: "Développeur Junior",
-    company: "StartupFlow",
-    period: "2018 - 2020",
-    description: "Maintenance de l'application principale. Développement de nouvelles fonctionnalités en Python et JavaScript."
+    role: "Développeur Full Stack",
+    company: "ONG Zonal",
+    period: "Juin 2026 - présent",
+    description: "Conception et réalisation d'une application web pour la gestion des activité et la visibilité de l'ONG"
+  },
+  {
+    id: 4,
+    role: "Développeur Full Stack",
+    company: "SmrathPhone House",
+    period: "Juin 2026 - présent",
+    description: "Conception et réalisation d'une application E-commerce"
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
-    description: "Une application de gestion complète pour les commerçants, incluant des graphiques de ventes en temps réel et gestion des stocks.",
-    tech: ["React", "TypeScript", "Recharts", "Node.js"],
-    imageUrl: "https://picsum.photos/600/400?random=1",
-    github: "#",
-    link: "#"
+    title: "Frensh Cercle",
+    description: "Application web de gestion des cours de français en ligne",
+    tech: ["PHP", "Laravel", "Boostrap", "Stripe"],
+    imageUrl: "/public/images/frenshCercle.png",
+    // github: "#",
+    link: "https://frenchcercle.com/"
   },
   {
     id: 2,
-    title: "AI Content Generator",
-    description: "Plateforme SaaS permettant de générer des articles de blog optimisés SEO via l'API Gemini.",
-    tech: ["Next.js", "Gemini API", "Tailwind", "Stripe"],
-    imageUrl: "https://picsum.photos/600/400?random=2",
-    github: "#",
+    title: "ONG Zonal",
+    description: "Application web de gestion des activité et la visibilité de l'ONG Zonal",
+    tech: ["React", "Symfony", "Tailwind"],
+    imageUrl: "/public/images/zonal.png",
+    // github: "#",
     link: "#"
   },
   {
@@ -73,7 +80,7 @@ export const PROJECTS: Project[] = [
     description: "Outil de gestion de projet collaboratif avec fonctionnalités de glisser-déposer et chat en temps réel.",
     tech: ["Vue.js", "Firebase", "Pinia"],
     imageUrl: "https://picsum.photos/600/400?random=3",
-    github: "#",
+    // github: "#",
     link: "#"
   }
 ];
